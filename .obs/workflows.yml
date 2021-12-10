@@ -6,7 +6,7 @@ rebuild:
   filters:
     event: push
     branches:
-      only: [master]
+      only: [main]
 
 pr:
   steps:
