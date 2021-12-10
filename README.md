@@ -1,1 +1,1 @@
-# obs-scm-test
+## Testing Open Build Service workflows
