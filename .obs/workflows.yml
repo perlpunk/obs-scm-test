@@ -1,0 +1,7 @@
+rebuild:
+  steps:
+    - rebuild_package:
+        project: home:tinita:githubtest
+        package: obstest
+  filters:
+    event: push
