@@ -13,6 +13,6 @@ pr:
   - branch_package:
       source_project: home:tinita:githubtest
       source_package: obstest
-      target_project: home:tinita:githubtest::CI
+      target_project: home:tinita:githubtest:CI
   filters:
     event: pull_request
