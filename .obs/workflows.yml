@@ -1,7 +1,18 @@
 rebuild:
   steps:
-    - rebuild_package:
-        project: home:tinita:githubtest
-        package: obstest
+  - rebuild_package:
+      project: home:tinita:githubtest
+      package: obstest
   filters:
     event: push
+    branches:
+      only: [master]
+
+pr:
+  steps:
+  - branch_package:
+      source_project: home:tinita:githubtest
+      source_package: obstest
+      target_project: home:tinita:githubtest::CI
+  filters:
+    event: pull_request
